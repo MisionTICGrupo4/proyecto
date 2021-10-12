@@ -11,9 +11,9 @@
 
 <body>
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class=" container-fluid container">
+            <a class="navbar-brand " href="#">LOGO</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -51,15 +51,31 @@
     </nav>
     <!-- fin nav -->
 
-    <div class="row container">
-        <div class="container col-md-6">
-            <h2>LOGIN</h2>
+    <div class="row container mt-5">
+        <div class="container my-auto col-md-4">
+            <h2 class="text-center">LOGIN</h2>
+            <br>
             <form action="">
                 <label for="">Email o nombre</label>
+                <br>
                 <input type="text" class="form-control" placeholder="Digita tu correo">
+                <br>
+                <label for="">Contraseña</label>
+                <br>
+                <input type="password" class="form-control" placeholder="Digita tu Contraseña">
+                <br>
+                <div class="container">
+                    <input type="submit" value="Entrar" class="btn btn-primary  form-control">
+                </div>
+
             </form>
+            <br><br>
+            <div class="row">
+                <a href="#" class="text-primary">Registrate</a>
+            </div>
+
         </div>
-        <div class="col-md-6  ">
+        <div class="col-md-6 d-none d-sm-none d-md-block">
             <img src="img/background.png" alt="">
         </div>
     </div>
