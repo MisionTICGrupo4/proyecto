@@ -24,7 +24,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="login.html">Login</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -57,19 +57,29 @@
             <h2 class="text-center">LOGIN</h2>
             <br>
             <form action="">
-                <label for="">Email o nombre</label>
+                <label for="validationCustom01">Email o nombre</label>
                 <br>
-                <input type="text" class="form-control" placeholder="Digita tu correo">
+                <input type="text" class="form-control" placeholder="Digita tu correo" id="validationCustom01" required>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
                 <br>
-                <label for="">Contraseña</label>
+                <label for="validationCustom02">Contraseña</label>
                 <br>
-                <input type="password" class="form-control" placeholder="Digita tu Contraseña">
+                <input type="password" class="form-control" placeholder="Digita tu Contraseña" id="validationCustom02" required>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
                 <br>
                 <div class="container">
                     <input type="submit" value="Entrar" class="btn btn-primary  form-control">
                 </div>
 
             </form>
+
+            
+
+
             <br><br>
             <div class="row">
                 <a href="#" class="text-primary">Registrate</a>
@@ -77,7 +87,7 @@
 
         </div>
         <div class="col-md-6 d-none d-sm-none d-md-block">
-            <img src="img/background.png" alt="" class="img-responsive>
+            <img src="img/background.png" alt="" class="img-responsive">
         </div>
     </div>
 
