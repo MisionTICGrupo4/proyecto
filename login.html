@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <div class=" container-fluid container">
             <a class="navbar-brand" href="#">
-                <img src="img/logo.jpeg" width="170" height="100" class="d-inline-block align-top" alt="">
+                <img src="img/logo.jpeg" width="80"  class="d-inline-block align-top" alt="">
              </a>
             
           </button>
@@ -52,7 +52,7 @@
     </nav>
     <!-- fin nav -->
 
-    <div class="row container mt-5">
+    <div class="row container mt-4">
         <div class="container my-auto col-md-4">
             <h2 class="text-center">LOGIN</h2>
             <br>
@@ -77,17 +77,37 @@
 
             </form>
 
-            
+            <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function() {
+                  'use strict';
+                  window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                      form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                      }, false);
+                    });
+                  }, false);
+                })();
+                </script>
 
 
-            <br><br>
+            <br>
             <div class="row">
-                <a href="#" class="text-primary">Registrate</a>
+                <p>¿No tienes Cuenta? <a class="hv" href="#" title="go to registrar">Registrate</a></p><br>
             </div>
 
         </div>
-        <div class="col-md-6 d-none d-sm-none d-md-block">
-            <img src="img/background.png" alt="" class="img-responsive">
+        <div class="col-md-6 d-none d-sm-none d-md-block" >
+            <img src="img/background1.png" alt="" width=750 >
+            
         </div>
     </div>
 
