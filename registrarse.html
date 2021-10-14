@@ -11,10 +11,10 @@
 
 <body>
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <nav class="navbar navbar-expand-lg navbar-light  " style="background-color: #f2f7d7; ">
         <div class=" container-fluid container">
             <a class="navbar-brand" href="#">
-                <img src="img/logo.jpeg" width="170" height="100" class="d-inline-block align-top" alt="">
+                <img src="img/logo.png" width="90"  class="d-inline-block align-top" alt="">
              </a>
           </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -53,52 +53,64 @@
 
     <div class="row container mt-5">
         <div class="container my-auto col-md-4">
+            <div style="text-align: center;"><img src="img/taza.png" width=50 > </div>
             <h2 class="text-center">REGISTRO</h2>
-            <br>
-            <form action="">
-                <label for="">Nombre</label>
-                <br>
-                <input type="text" class="form-control" placeholder="Digita tu nombre">
-                <br>
-                <label for="">Correo</label>
-                <br>
-                <input type="email" class="form-control" placeholder="Digita tu correo">
-                <br>
-                <label for="">Telefono</label>
-                <br>
-                <input type="text" class="form-control" placeholder="Digita tu telefono">
-                <br>
-                <label for="">Contraseña</label>
-                <br>
-                <input type="password" class="form-control" placeholder="Digita tu Contraseña">
-                <br>
-                <label for="">Confirmar Contraseña</label>
-                <br>
-                <input type="password" class="form-control" placeholder="Confirma tu Contraseña">
-                <br>
-                <label for="">Fecha de Nacimiento</label>
-                <br>
-                <input type="date" class="form-control" placeholder="Digita tu correo">
-                <br>
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+           <form action="">
+                <label for="validationCustom01">Nombre</label>
+                <p>
+                <input type="text" class="form-control" placeholder="Digita tu nombre" id="validationCustom01" required>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                <label for="validationCustom02">Correo</label>
+                <p>
+                <input type="email" class="form-control" placeholder="Digita tu correo" id="validationCustom02" required>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                <label for="validationCustom03">Telefono</label>
+                <p>
+                <input type="text" class="form-control" placeholder="Digita tu telefono" id="validationCustom03" required>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                <label for="validationCustom04">Contraseña</label>
+                <p>
+                <input type="password" class="form-control" placeholder="Digita tu Contraseña" id="validationCustom04" required>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                <label for="validationCustom05">Confirmar Contraseña</label>
+                <p>
+                <input type="password" class="form-control" placeholder="Confirma tu Contraseña" id="validationCustom05" required>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                <label for="validationCustom06">Fecha de Nacimiento</label>
+                <p>
+                <input type="date" class="form-control" placeholder="Digita tu correo" id="validationCustom06" required>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
-                  Acepta Terminos y Condiciones
-                <br>
+                  Acepta Términos y Condiciones
+                
                 <br>
                 <div class="container">
-                    <input type="submit" value="Registrar" class="btn btn-primary  form-control">
+                    <input type="submit" value="Registrar" class="btn btn-success form-control">
                 </div>
                 
 
             </form>
             <br>
             <div class="row">
-                ¿Ya tienes cuenta? <a href="#" class="text-primary">Login</a>
+                <p>¿Ya tienes Cuenta? <a class="hv text-success" href="#" title="go to registrar">Login</a></p><br>
             </div>
 
         </div>
         <div class="col-md-6 d-none d-sm-none d-md-block">
-            <img src="img/background.png" alt="">
+            <img src="img/background1.png" alt="" width=750 >
         </div>
     </div>
 

@@ -9,12 +9,17 @@
     <title>Login</title>
 </head>
 
+
 <body>
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <nav class="navbar navbar-expand-lg navbar-light  " style="background-color: #f2f7d7; ">
         <div class=" container-fluid container">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.jpeg" width="170" height="100" class="d-inline-block align-top" alt="">
+            </a>
+
+            </button>
+            <img src="img/logo.png" width="90" class="d-inline-block align-top" alt="">
             </a>
 
             </button>
@@ -24,7 +29,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="login.html">Login</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,32 +57,62 @@
     </nav>
     <!-- fin nav -->
 
-    <div class="row container mt-5">
+    <div class="row container mt-4">
         <div class="container my-auto col-md-4">
+            <div style="text-align: center;"><img src="img/taza.png" width=50> </div>
             <h2 class="text-center">LOGIN</h2>
             <br>
             <form action="">
-                <label for="">Email o nombre</label>
-                <br>
-                <input type="text" class="form-control" placeholder="Digita tu correo">
-                <br>
-                <label for="">Contraseña</label>
-                <br>
-                <input type="password" class="form-control" placeholder="Digita tu Contraseña">
-                <br>
-                <div class="container">
-                    <input type="submit" value="Entrar" class="btn btn-primary  form-control">
-                </div>
+                <label for="validationCustom01">Email o nombre</label>
+                <p>
+                    <input type="text" class="form-control" placeholder="Digita tu correo" id="validationCustom01" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <label for="validationCustom02">Contraseña</label>
+                    <p>
+                        <input type="password" class="form-control" placeholder="Digita tu Contraseña" id="validationCustom02" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <br>
+                        <div class="container">
+                            <input type="submit" value="Entrar" class="btn btn-success form-control">
+                        </div>
 
             </form>
-            <br><br>
+
+            <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function() {
+                    'use strict';
+                    window.addEventListener('load', function() {
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.getElementsByClassName('needs-validation');
+                        // Loop over them and prevent submission
+                        var validation = Array.prototype.filter.call(forms, function(form) {
+                            form.addEventListener('submit', function(event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        });
+                    }, false);
+                })();
+            </script>
+
+
+            <br>
             <div class="row">
-                <a href="#" class="text-primary">Registrate</a>
+                <p>¿No tienes Cuenta? <a class="hv text-success" href="#" title="go to registrar">Registrate</a></p><br>
             </div>
 
         </div>
         <div class="col-md-6 d-none d-sm-none d-md-block">
-            <img src="img/background.png" alt="" class="img-responsive>
+            <img src="img/background1.png" alt="" width=750>
+
         </div>
     </div>
 
