@@ -15,14 +15,10 @@
     <nav class="navbar navbar-expand-lg navbar-light  " style="background-color: #f2f7d7; ">
         <div class=" container-fluid container">
             <a class="navbar-brand" href="#">
-                <img src="img/logo.jpeg" width="170" height="100" class="d-inline-block align-top" alt="">
-            </a>
-
-            </button>
-            <img src="img/logo.png" width="90" class="d-inline-block align-top" alt="">
-            </a>
-
-            </button>
+                <img src="img/logo.png" width="90"  class="d-inline-block align-top" alt="">
+             </a>
+            
+          </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -48,7 +44,7 @@
                         <a class="nav-link disabled">Disabled</a>
                     </li>
                 </ul>
-                <form class="d-flex" action="resultado_de_busqueda.html" method="GET">
+                <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
@@ -59,49 +55,49 @@
 
     <div class="row container mt-4">
         <div class="container my-auto col-md-4">
-            <div style="text-align: center;"><img src="img/taza.png" width=50> </div>
-            <h2 class="text-center">LOGIN</h2>
+            <div style="text-align: center;"><img src="img/taza.png" width=50 > </div>
+                <h2 class="text-center">LOGIN</h2 >
             <br>
             <form action="">
                 <label for="validationCustom01">Email o nombre</label>
                 <p>
-                    <input type="text" class="form-control" placeholder="Digita tu correo" id="validationCustom01" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                    <label for="validationCustom02">Contraseña</label>
-                    <p>
-                        <input type="password" class="form-control" placeholder="Digita tu Contraseña" id="validationCustom02" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                        <br>
-                        <div class="container">
-                            <input type="submit" value="Entrar" class="btn btn-success form-control">
-                        </div>
+                <input type="text" class="form-control" placeholder="Digita tu correo" id="validationCustom01" required>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                <label for="validationCustom02">Contraseña</label>
+                <p>
+                <input type="password" class="form-control" placeholder="Digita tu Contraseña" id="validationCustom02" required>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                <br>
+                <div class="container">
+                    <input type="submit" value="Entrar" class="btn btn-success form-control">
+                </div>
 
             </form>
 
             <script>
                 // Example starter JavaScript for disabling form submissions if there are invalid fields
                 (function() {
-                    'use strict';
-                    window.addEventListener('load', function() {
-                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                        var forms = document.getElementsByClassName('needs-validation');
-                        // Loop over them and prevent submission
-                        var validation = Array.prototype.filter.call(forms, function(form) {
-                            form.addEventListener('submit', function(event) {
-                                if (form.checkValidity() === false) {
-                                    event.preventDefault();
-                                    event.stopPropagation();
-                                }
-                                form.classList.add('was-validated');
-                            }, false);
-                        });
-                    }, false);
+                  'use strict';
+                  window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                      form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                      }, false);
+                    });
+                  }, false);
                 })();
-            </script>
+                </script>
 
 
             <br>
@@ -110,14 +106,14 @@
             </div>
 
         </div>
-        <div class="col-md-6 d-none d-sm-none d-md-block">
-            <img src="img/background1.png" alt="" width=750>
-
+        <div class="col-md-6 d-none d-sm-none d-md-block" >
+            <img src="img/background1.png" alt="" width=750 >
+            
         </div>
     </div>
 
 
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
